@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HopeShipStrive</string>
+    <string name="rides_screen_title">My Rides</string>
+    <string name="estimated_earnings_section_header">ESTIMATED</string>
+    <string name="date_time_separator">•</string>
+    <string name="time_separator">—</string>
+    <string name="riders_no_boosters">(%1$d %2$s)</string>
+    <string name="riders_with_boosters">(%1$d %2$s • %3$d %4$s)</string>
+    <string name="close_dialog">Close dialog</string>
+    <string name="error_loading_data">New trip information could not be loaded. Try again later.</string>
+    <string name="dialog_title">Are you sure?</string>
+    <string name="dialog_subtitle">Are you sure you want to cancel this claim? This cannot be undone.</string>
+    <string name="dialog_button1_text">Nevermind</string>
+    <string name="dialog_button2_text">Yes</string>
+    <string name="estimated_earnings_trip_card">est.</string>
+</resources>

@@ -1,0 +1,293 @@
+{
+  "trips": [
+    {
+      "estimated_earnings": 1736,
+      "slug": "af9d7e423fcedc",
+      "time_anchor": "pick_up",
+      "in_series": true,
+      "passengers": [
+        {
+          "uuid": "8f30452d-b5c2-4047-b8be-4f9e8570c321",
+          "booster_seat": false
+        },
+        {
+          "uuid": "5a6eb550-22d2-4238-881f-961c98fdf9bf",
+          "booster_seat": true
+        },
+        {
+          "uuid": "86ca58f7-a857-4669-b6a0-7f20af137453",
+          "booster_seat": false
+        }
+      ],
+      "planned_route": {
+        "total_time": 25.9,
+        "total_distance": 15781,
+        "starts_at": "2023-11-16T18:15:00Z",
+        "ends_at": "2023-11-16T18:40:55Z",
+        "legs": [
+          {
+            "position": 1,
+            "start_waypoint_id": 1252826,
+            "end_waypoint_id": 1252827
+          },
+          {
+            "position": 2,
+            "start_waypoint_id": 1252827,
+            "end_waypoint_id": 1252828
+          }
+        ]
+      },
+      "waypoints": [
+        {
+          "id": 1252826,
+          "location": {
+            "address": "101 Main St, Huntington Beach, CA 92648, USA",
+            "lat": 33.6577394,
+            "lng": -118.0018199
+          },
+          "passengers": []
+        },
+        {
+          "id": 1252827,
+          "location": {
+            "address": "981 CA-1, Seal Beach, CA 90740, USA",
+            "lat": 33.744308,
+            "lng": -118.101178
+          },
+          "passengers": [
+            {
+              "uuid": "8f30452d-b5c2-4047-b8be-4f9e8570c321",
+              "booster_seat": false
+            },
+            {
+              "uuid": "5a6eb550-22d2-4238-881f-961c98fdf9bf",
+              "booster_seat": true
+            }
+          ]
+        },
+        {
+          "id": 1252828,
+          "location": {
+            "address": "6255 2nd St, Long Beach, CA 90803, USA",
+            "lat": 33.7585003,
+            "lng": -118.1128225
+          },
+          "passengers": [
+            {
+              "uuid": "86ca58f7-a857-4669-b6a0-7f20af137453",
+              "booster_seat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "estimated_earnings": 2914,
+      "slug": "af05ab6c6d0964",
+      "time_anchor": "pick_up",
+      "passengers": [
+        {
+          "booster_seat": false
+        }
+      ],
+      "planned_route": {
+        "total_time": 63.5,
+        "total_distance": 46924,
+        "starts_at": "2023-11-17T17:00:00Z",
+        "ends_at": "2023-11-17T18:03:30Z",
+        "legs": [
+          {
+            "position": 1,
+            "start_waypoint_id": 1239662,
+            "end_waypoint_id": 1239663
+          }
+        ]
+      },
+      "waypoints": [
+        {
+          "id": 1239662,
+          "location": {
+            "address": "7 Pepper Tree Ln, Rolling Hills Estates, CA 90274, USA",
+            "lat": 33.7611392,
+            "lng": -118.3921106
+          },
+          "passengers": []
+        },
+        {
+          "id": 1239663,
+          "location": {
+            "address": "1321 Cortez St, Los Angeles, CA 90026, USA",
+            "lat": 34.066333,
+            "lng": -118.2559734
+          },
+          "passengers": [
+            {
+              "uuid": "ee7d9d26-1441-41a3-b392-162a6977bad5",
+              "booster_seat": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "estimated_earnings": 4802,
+      "slug": "afd5d03cfb6d74",
+      "time_anchor": "drop_off",
+      "passengers": [
+        {
+          "uuid": "6d049405-b912-4e85-b9ba-045a4ca9b0ef",
+          "booster_seat": false
+        },
+        {
+          "uuid": "aea046ff-aae4-42d3-864f-428bf0df56cb",
+          "booster_seat": false
+        },
+        {
+          "uuid": "dd9a58fb-d7a6-4c44-9fe5-f3cf54e69096",
+          "booster_seat": false
+        }
+      ],
+      "planned_route": {
+        "total_time": 71.4,
+        "total_distance": 52940,
+        "starts_at": "2023-11-17T23:40:00Z",
+        "ends_at": "2023-11-18T00:51:24Z",
+        "legs": [
+          {
+            "position": 1,
+            "start_waypoint_id": 1224468,
+            "end_waypoint_id": 1224466
+          },
+          {
+            "position": 2,
+            "start_waypoint_id": 1224466,
+            "end_waypoint_id": 1224467
+          }
+        ]
+      },
+      "waypoints": [
+        {
+          "id": 1224466,
+          "location": {
+            "address": "607 E Chestnut St, Glendale, CA 91205, USA",
+            "lat": 34.1401443,
+            "lng": -118.2479798
+          },
+          "passengers": [
+            {
+              "uuid": "6d049405-b912-4e85-b9ba-045a4ca9b0ef",
+              "booster_seat": false
+            }
+          ]
+        },
+        {
+          "id": 1224467,
+          "location": {
+            "address": "12512 Beverly Dr, Whittier, CA 90601, USA",
+            "lat": 33.9933977,
+            "lng": -118.0428127
+          },
+          "passengers": [
+            {
+              "uuid": "aea046ff-aae4-42d3-864f-428bf0df56cb",
+              "booster_seat": false
+            },
+            {
+              "uuid": "dd9a58fb-d7a6-4c44-9fe5-f3cf54e69096",
+              "booster_seat": false
+            }
+          ]
+        },
+        {
+          "id": 1224468,
+          "location": {
+            "address": "1440 E Broadway, Glendale, CA 91205, USA",
+            "lat": 34.145845,
+            "lng": -118.2324237
+          },
+          "passengers": []
+        }
+      ]
+    },
+    {
+      "estimated_earnings": 4802,
+      "slug": "afe990b5e1f187",
+      "time_anchor": "drop_off",
+      "passengers": [
+        {
+          "uuid": "6d049405-b912-4e85-b9ba-045a4ca9b0ef",
+          "booster_seat": false
+        },
+        {
+          "uuid": "aea046ff-aae4-42d3-864f-428bf0df56cb",
+          "booster_seat": false
+        },
+        {
+          "uuid": "dd9a58fb-d7a6-4c44-9fe5-f3cf54e69096",
+          "booster_seat": false
+        }
+      ],
+      "planned_route": {
+        "total_time": 71.4,
+        "total_distance": 52940,
+        "starts_at": "2023-11-20T23:40:00Z",
+        "ends_at": "2023-11-21T00:51:24Z",
+        "legs": [
+          {
+            "position": 1,
+            "start_waypoint_id": 1224471,
+            "end_waypoint_id": 1224469
+          },
+          {
+            "position": 2,
+            "start_waypoint_id": 1224469,
+            "end_waypoint_id": 1224470
+          }
+        ]
+      },
+      "waypoints": [
+        {
+          "id": 1224469,
+          "location": {
+            "address": "607 E Chestnut St, Glendale, CA 91205, USA",
+            "lat": 34.1401443,
+            "lng": -118.2479798
+          },
+          "passengers": [
+            {
+              "uuid": "6d049405-b912-4e85-b9ba-045a4ca9b0ef",
+              "booster_seat": false
+            }
+          ]
+        },
+        {
+          "id": 1224470,
+          "location": {
+            "address": "12512 Beverly Dr, Whittier, CA 90601, USA",
+            "lat": 33.9933977,
+            "lng": -118.0428127
+          },
+          "passengers": [
+            {
+              "uuid": "aea046ff-aae4-42d3-864f-428bf0df56cb",
+              "booster_seat": false
+            },
+            {
+              "uuid": "dd9a58fb-d7a6-4c44-9fe5-f3cf54e69096", 
+              "booster_seat": false
+            }
+          ]
+        },
+        {
+          "id": 1224471,
+          "location": {
+            "address": "1440 E Broadway, Glendale, CA 91205, USA",
+            "lat": 34.145845,
+            "lng": -118.2324237
+          },
+          "passengers": []
+        }
+      ]
+    }
+  ]
+}

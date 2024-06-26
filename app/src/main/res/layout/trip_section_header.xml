@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topRule"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/horizontalRule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="?attr/colorPrimary"
+        android:textStyle="bold"
+        tools:text="Thu 6/17"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintTop_toBottomOf="@id/topRule"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/dateTimeSeparatorTextView"
+        app:layout_constraintBottom_toTopOf="@+id/bottomRule"/>
+
+    <TextView
+        android:id="@+id/dateTimeSeparatorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/date_time_separator"
+        app:layout_constraintStart_toEndOf="@+id/dateTextView"
+        app:layout_constraintTop_toTopOf="@+id/dateTextView"
+        app:layout_constraintEnd_toStartOf="@+id/startTimeTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/dateTextView"/>
+
+    <TextView
+        android:id="@+id/startTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        tools:text="4:18a"
+        app:layout_constraintStart_toEndOf="@id/dateTimeSeparatorTextView"
+        app:layout_constraintEnd_toStartOf="@+id/pickupDropOffSeparatorTextView"
+        app:layout_constraintTop_toTopOf="@+id/dateTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/dateTextView"/>
+
+    <TextView
+        android:id="@+id/pickupDropOffSeparatorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:text="@string/time_separator"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/startTimeTextView"
+        app:layout_constraintBaseline_toBaselineOf="@id/startTimeTextView"
+        app:layout_constraintEnd_toStartOf="@+id/endTimeTextView"/>
+
+    <TextView
+        android:id="@+id/endTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        tools:text="4:26p"
+        app:layout_constraintStart_toEndOf="@id/pickupDropOffSeparatorTextView"
+        app:layout_constraintEnd_toStartOf="@+id/spacerView"
+        app:layout_constraintTop_toTopOf="@+id/dateTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/dateTextView"/>
+
+    <!-- A spacer view isn't strictly necessary. We could allocate the extra space to one
+        of the existing TextViews in the chain. Or we could set the horizontal bias on each
+        of the chain elements to make sure a gap between elements was only used in one space.
+        Or instead of a complete horizontal chain across the screen, we could simply have some
+        views constrained to the start and a separate group constraints to the end - but then
+        if the screen was exceptionally narrow or the contents exceptionally long, they could
+        overlap each other. A spacer view avoids issues and is intuitive. -->
+    <View
+        android:id="@+id/spacerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@+id/endTimeTextView"
+        app:layout_constraintEnd_toStartOf="@+id/estEarningsLabelTextView"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/estEarningsLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/estimated_earnings_section_header"
+        android:textAllCaps="true"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@id/spacerView"
+        app:layout_constraintTop_toBottomOf="@id/topRule"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/estEarningsValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textColor="?attr/colorPrimary"
+        tools:text="$105.25"
+        app:layout_constraintStart_toEndOf="@id/spacerView"
+        app:layout_constraintTop_toBottomOf="@id/estEarningsLabelTextView"
+        app:layout_constraintBottom_toTopOf="@+id/bottomRule"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/bottomRule"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/horizontalRule"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
