@@ -66,6 +66,8 @@ class MainActivity : AppCompatActivity(), AlertDialogFragment.Listener {
         }
     }
 
+    // NOTE: a more sophisticated implementation would update only items that have changed,
+    // instead of replacing the entire adapter.
     private fun setAdapter(trips: List<TripListItem>) {
         val adapter = TripAdapter(trips, object : TripAdapter.OnItemClickListener {
             override fun onItemClick(trip: TripListItem.TripItem, position: Int) {
